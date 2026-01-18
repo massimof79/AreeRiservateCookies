@@ -1,9 +1,6 @@
 <?php
 
 $conn = new mysqli("localhost", "root", "Ykkmacbook79", "test");
-
-
-
 $dsn = 'mysql:dbname=test;host=localhost'; // DSN per MySQL
 $utente = 'root';
 $password = 'Ykkmacbook79';
@@ -32,17 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $errore = "Credenziali non valide";
 }
-
-
     echo "Connessione riuscita!";
     // Qui puoi eseguire query SQL
     
 } catch (PDOException $e) {
     echo "Errore di connessione: " . $e->getMessage();
 }
-
-
-
 
 ?>
 
